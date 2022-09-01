@@ -8,7 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function Listtrans() {
     return (
 
-        <Navbar className='bg-dark' variant="dark">
+        <Navbar sticky="top" className='bg-dark' variant="dark">
             <Container>
                 <Navbar.Brand href="#home">
                     <img
