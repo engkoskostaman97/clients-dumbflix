@@ -1,9 +1,13 @@
 import React, { Component } from "react";
-import Listtrans from "../listtrans";
+import Listtrans from "./component/listtrans";
 import { Route, Routes } from "react-router-dom";
-import List from "../list";
-import Listfilm from "../listfilm";
-import Addfilm from "../addfilm";
+import List from "./component/list";
+import Listfilm from "./component/listfilm";
+import Addfilm from "./component/addfilm";
+import Listdetail from "./component/listdetail";
+import Addepisode from "./component/addepisode";
+import './App.css'
+
 
 class App extends Component {
   render() {
@@ -18,6 +22,11 @@ class App extends Component {
           <Route path='/list' element={<List />} />
           <Route path='/listfilm' element={<Listfilm />} />
           <Route path='/addfilm' element={<Addfilm />} />
+          <Route path='/listdetail' element={<Listdetail />} />
+          <Route path='/addepisode' element={<Addepisode />} />
+
+
+
 
         </Routes>
         {/* <div>

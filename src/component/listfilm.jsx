@@ -73,7 +73,7 @@ function Listfilm() {
                         <Card style={{ backgroundColor: "black" }} className="px-2">
                             <Card.Img variant="top" src={gambar4} />
                             <Card.Body className='text-light'>
-                                <Card.Title>Money Heist</Card.Title>
+                                <Card.Title className='href = ./listdetail'>Money Heist</Card.Title>
                                 <Card.Text>
                                     2013
                                 </Card.Text>

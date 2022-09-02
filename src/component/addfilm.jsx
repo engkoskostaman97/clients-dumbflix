@@ -5,7 +5,7 @@ function Addfilm() {
     return (
         <div style={{ backgroundColor: "black" }} >
             <div >
-                <h2 className='text-light p-15 '>Add Film</h2>
+                <h2 className='text-light col-2 d-flex justify-content-end'>Add Film</h2>
             </div>
             <form className='d-flex justify-content-center'>
                 <div className='row g-2 d-flex justify-content-center'>
@@ -70,7 +70,7 @@ function Addfilm() {
                         <Form.Control type="text" placeholder="+" />
                     </div>
                     <div className="col-10 d-flex justify-content-end">
-                        <button class="btn btn-danger float-md-end btn-lg" type="button">save</button>
+                        <button class="btn btn-danger float-md-end btn-lg  d-grid gap-2 col-2  " type="button">save</button>
 
                     </div>
 
