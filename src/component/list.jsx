@@ -31,7 +31,7 @@ function List() {
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Radif Ganteng</td>
+                                <td>akus</td>
                                 <td>bca.jpg</td>
                                 <td>26/Hari</td>
                                 <td className="text-success">Active</td>
@@ -40,7 +40,7 @@ function List() {
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Haris Rahman</td>
+                                <td>abdullah </td>
                                 <td>bni.jpg</td>
                                 <td>26/Hari</td>
                                 <td className="text-success">Active</td>
@@ -49,7 +49,7 @@ function List() {
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Amin Subagiyo</td>
+                                <td>muhammad setiaji</td>
                                 <td>permata.jpg</td>
                                 <td>0/Hari</td>
                                 <td className="text-danger">Not active</td>
@@ -58,7 +58,7 @@ function List() {
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Haris Astina</td>
+                                <td>Ade Teguh</td>
                                 <td>permata.jpg</td>
                                 <td>0/Hari</td>
                                 <td className="text-danger">Not active</td>
@@ -67,7 +67,7 @@ function List() {
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Azis Oni On</td>
+                                <td>Aji </td>
                                 <td>bi.jpg</td>
                                 <td>0/Hari</td>
                                 <td className="text-danger">Not active</td>

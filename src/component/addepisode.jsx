@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form';
+
 function Addepisode() {
     return (
         <div style={{ backgroundColor: "black" }} >
@@ -29,7 +30,7 @@ function Addepisode() {
                         <Form.Control type="text" placeholder="year" />
                     </div>
                     <div className="col-12 justify-content-end ">
-                        <button class="btn btn-danger float-md-end btn-lg d-grid gap-2 col-4 mx-auto " type="button">Add</button>
+                        <button class="btn btn-danger  d-grid gap-2 col-4 mx-auto " type="button">Add</button>
 
                     </div>
                 </div>
