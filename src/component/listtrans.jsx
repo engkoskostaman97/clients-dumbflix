@@ -1,5 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
+import NavDropdown from 'react-bootstrap/NavDropdown'
+
 import Navbar from 'react-bootstrap/Navbar';
 import image1 from '../image/dumbflix.png';
 import image2 from '../image/Ellipse 1.png';
@@ -8,13 +10,13 @@ import Nav from 'react-bootstrap/Nav';
 import image4 from '../image/logout1.png';
 
 
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 export default function Listtrans() {
     return (
 
-        <Navbar sticky="top" className='bg-dark' variant="dark">
-            <Container>
-                <Navbar.Brand href="#home">
+        <Navbar bg="dark" expand="lg" className="sticky-sm-top">
+            <Container variant="dark">
+                <Navbar.Brand href="/list">
                     <img
                         alt=""
                         src={image1}
@@ -25,10 +27,10 @@ export default function Listtrans() {
                     />{' '}
                 </Navbar.Brand>
                 <Navbar.Brand >
-                    <Navbar variant="dark" bg="dark" expand="lg">
+                    <Navbar variant="dark" bg="dark" expand="lg" >
                         <Container fluid>
-                            <Navbar.Toggle aria-controls="navbar-black-example" />
-                            <Navbar.Collapse id="navbar-black-example">
+                            <Navbar.Toggle aria-controls="navbar-black-example" className='bg-dark' />
+                            <Navbar.Collapse id="navbar-black-example" className='bg-dark'>
                                 <Nav >
                                     <img
                                         alt=""
@@ -38,17 +40,29 @@ export default function Listtrans() {
                                         height="40"
 
                                     />{' '}
-                                    <NavDropdown >
+
+
+
+                                    <NavDropdown variant="dark" className=" me-5">
+
+
                                         <NavDropdown.Item href="/listfilm" className='d-flex '>
                                             <img src={image3} alt="image3" />
                                             <p className='text-danger  mx-2 mt-3 mb-2'>Film</p>
                                         </NavDropdown.Item>
-                                        <hr></hr>
-                                        <NavDropdown.Item href="/list" className='d-flex' >
+                                        <hr ></hr>
+                                        <NavDropdown.Item href="/list" className='d-flex ' >
                                             <img src={image4} alt="image4" />
                                             <p className='text-danger  mx-2 mt-3 mb-2'>Log out</p>
                                         </NavDropdown.Item>
+
+
                                     </NavDropdown>
+
+
+
+
+
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
@@ -60,7 +74,7 @@ export default function Listtrans() {
 
                 </Navbar.Brand>
             </Container>
-        </Navbar>
+        </Navbar >
 
 
     )

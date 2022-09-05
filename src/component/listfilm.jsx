@@ -31,7 +31,7 @@ function Listfilm() {
                             Categori
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">TV Series</Dropdown.Item>
+                            <Dropdown.Item href="/listfilm" for="tvseries">TV Series</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Movies</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
@@ -42,12 +42,13 @@ function Listfilm() {
             </div>
             <div style={{ backgroundColor: "black" }}>
                 <CardGroup>
-                    <h2 className='text-light mb-10'> TV Series</h2>
+                    <h2 className='text-light mb-10 ' id="tvseries"> TV Series</h2>
                     <div className='d-flex mx-auto mt-5 pt-5'>
                         <Link to='/listdetail' style={{ textDecoration: "none" }}>
                             <Card style={{ backgroundColor: "black" }} className="px-2">
                                 <Card.Img variant="top" src={gambar1} />
                                 <Card.Body className='text-light'>
+
                                     <Card.Title>The Witcher</Card.Title>
                                     <Card.Text>
                                         2019

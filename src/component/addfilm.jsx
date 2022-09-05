@@ -1,6 +1,9 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form';
+
+import Button from 'react-bootstrap/Button';
 import { CgAttachment } from 'react-icons/cg';
+import { AiOutlinePlus } from "react-icons/ai";
 
 function Addfilm() {
     return (
@@ -33,7 +36,7 @@ function Addfilm() {
                     <div className='col-10 d-flex justify-content-center'>
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Category</option>
-                            <option value="1">TV Series</option>
+                            <option value="1" for="tvseries">TV Series</option>
                             <option value="2">Movies</option>
 
                         </select>
@@ -44,7 +47,7 @@ function Addfilm() {
                     </div>
 
                     <div className='row g-2 d-flex justify-content-center'>
-                        <div className='col-8'>
+                        <div style={{ width: "950px", marginLeft: "35px" }}>
                             <div className='form-floating'>
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                     <Form.Label></Form.Label>
@@ -54,9 +57,9 @@ function Addfilm() {
                         </div>
                         <div className='col-2'>
                             <div className='form-floating'>
-                                <Form.Group controlId="formFile" className="mb-3 ">
-                                    <Form.Label></Form.Label>
-                                    <Form.Control type="file" />
+                                <Form.Group controlId="formFile" className=" mb-2 mt-4 ms-2 d-flex ">
+                                    <Form.Label for="fileattach" className='d-block p-2 bg-white rounded' type="file" >Attach Thumbail<CgAttachment className="text-danger mx-2" /></Form.Label>
+                                    <Form.Control type="file" id="fileattach" hidden />
                                 </Form.Group>
                             </div>
 
@@ -66,12 +69,17 @@ function Addfilm() {
                         <Form.Label></Form.Label>
                         <Form.Control type="text" placeholder="Link Film" />
                     </div>
-                    <div className='col-10 d-flex justify-content-center '>
-
-                        <Form.Control type="text" placeholder="+" />
+                    <div className='col-10 '>
+                        <Form.Group className="mb-3" controlId="add" >
+                            <Button
+                                className=" text-center col-12  bg-white"
+                            >
+                                <AiOutlinePlus className="text-danger" />
+                            </Button>
+                        </Form.Group>
                     </div>
                     <div className="col-10 d-flex justify-content-end">
-                        <button class="btn btn-danger float-md-end btn-lg  d-grid gap-2 col-2  " type="button">save</button>
+                        <button class="btn btn-danger float-md-end btn-lg  d-grid gap-2 col-2 " type="button">save</button>
 
                     </div>
 

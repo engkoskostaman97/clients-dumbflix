@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
 import 'video.js/dist/video-js.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import gambar3 from '../image/Rectangle3.jpg';
 import gambar4 from '../image/Rectangle65.jpg';
-
+import AddEpisode from "./addepisode";
 
 function Listdetail() {
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false);
     return (
         <>
             <div className='d-flex justify-content-center bg-dark' variant="dark">
@@ -26,7 +29,14 @@ function Listdetail() {
             </div>
             <div style={{ backgroundColor: "black" }} >
                 <div className='d-grid gap-2 d-md-flex justify-content-md-end'>
-                    <Button className='btn btn-danger' href="./addepisode" type="submit">Add Episode</Button>{' '}
+                    <Button
+
+                        onClick={handleShow}
+                    >
+                        Add Episode
+                    </Button>
+
+                    <AddEpisode show={show} handleClose={handleClose} />
                 </div>
             </div>
 
@@ -42,14 +52,15 @@ function Listdetail() {
                         </Card>
                         <div class="col-md-5 text-light text-justify ">
                             <div class="card-body ">
-                                <h2 class="card-title mb-2">Money Heist</h2>
+                                <h2 class="card-title">Money Heist</h2>
+
                                 <div className='d-flex text-muted'>
                                     <p >2017</p>
                                     <p className='ms-3 txt-mtd' style={{ border: "2px solid grey", borderRadius: "3px", padding: "3px" }}> Tv Series</p>
                                 </div>
 
 
-
+                                <br></br>
 
                                 <p class='mt-2'>Money Heist is a crime drama on Netflix - originally called La Casa de Papel.
                                     Money Heist season 3 has just been released by the streaming service.

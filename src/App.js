@@ -5,7 +5,7 @@ import List from "./component/list";
 import Listfilm from "./component/listfilm";
 import Addfilm from "./component/addfilm";
 import Listdetail from "./component/listdetail";
-import Addepisode from "./component/addepisode";
+
 import './App.css'
 
 
@@ -23,8 +23,6 @@ class App extends Component {
           <Route path='/listfilm' element={<Listfilm />} />
           <Route path='/addfilm' element={<Addfilm />} />
           <Route path='/listdetail' element={<Listdetail />} />
-          <Route path='/addepisode' element={<Addepisode />} />
-
 
 
 
