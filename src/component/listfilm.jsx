@@ -25,17 +25,20 @@ function Listfilm() {
                     <h2 className='text-light'> List Film</h2>
                 </div>
 
-                <div className='d-flex btn btn-outline-dark mt-1'>
-                    <Dropdown>
-                        <Dropdown.Toggle variant="outline" id="dropdown-basic">
+                <div className='d-flex'>
+                    <Dropdown >
+                        <Dropdown.Toggle variant="outline-secondar mx-3 text-light border" id="dropdown-basic">
                             Categori
                         </Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            <Dropdown.Item href="/listfilm" for="tvseries">TV Series</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Movies</Dropdown.Item>
+                        <Dropdown.Menu className=' bg-transparent border'>
+                            <Dropdown.Item href="/listfilm" className='text-light'>Tv Series</Dropdown.Item>
+                            <Dropdown.Item href="#/" className='text-light'>Movies</Dropdown.Item>
+
                         </Dropdown.Menu>
                     </Dropdown>
+
                 </div>
+
                 <div className='d-flex ms-auto p-2'>
                     <Button className='btn btn-danger' href="./addfilm" type="submit">Add FIlm</Button>{' '}
                 </div>
@@ -162,7 +165,7 @@ function Listfilm() {
                     </div>
                 </CardGroup>
             </div>
-        </div>
+        </div >
 
 
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown'
+
+import Dropdown from 'react-bootstrap/Dropdown'
 
 import Navbar from 'react-bootstrap/Navbar';
 import image1 from '../image/dumbflix.png';
@@ -43,29 +44,31 @@ export default function Listtrans() {
 
 
 
-                                    <NavDropdown variant="dark" className=" me-5">
-
-
-                                        <NavDropdown.Item href="/listfilm" className='d-flex '>
-                                            <img src={image3} alt="image3" />
-                                            <p className='text-danger  mx-2 mt-3 mb-2'>Film</p>
-                                        </NavDropdown.Item>
-                                        <hr ></hr>
-                                        <NavDropdown.Item href="/list" className='d-flex ' >
-                                            <img src={image4} alt="image4" />
-                                            <p className='text-danger  mx-2 mt-3 mb-2'>Log out</p>
-                                        </NavDropdown.Item>
-
-
-                                    </NavDropdown>
-
-
-
-
+                                    <Dropdown>
+                                        <Dropdown.Toggle variant="dark" id="dropdown-basic">
+                                        </Dropdown.Toggle>
+                                        <Dropdown.Menu variant='dark'>
+                                            <Dropdown.Item href="/listfilm" className='d-flex '>
+                                                <img src={image3} alt="image3" />
+                                                <p className='text-danger  mx-2 mt-3 mb-2'>Film</p>
+                                            </Dropdown.Item>
+                                            <hr></hr>
+                                            <Dropdown.Item href="/list" className='d-flex ' >
+                                                <img src={image4} alt="image4" />
+                                                <p className='text-danger  mx-2 mt-3 mb-2'>Log out</p>
+                                            </Dropdown.Item>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
 
                                 </Nav>
+
+
+
                             </Navbar.Collapse>
+
                         </Container>
+
+
                     </Navbar>
 
 

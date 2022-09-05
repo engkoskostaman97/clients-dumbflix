@@ -1,15 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
     Form,
-    Card,
-    Container,
     Row,
     Col,
     Modal,
     Button,
 } from "react-bootstrap";
 import { BsPaperclip } from "react-icons/bs";
-import { AiOutlinePlus } from "react-icons/ai";
+
 
 const styles = {
     col: {
@@ -36,7 +34,8 @@ const AddEpisode = ({ show, handleClose }) => {
         <Modal
             show={show}
             onHide={handleClose}
-            style={{ width: "950px", justifyContent: "center" }}
+            style={{ justifyContent: "center" }}
+            className=' container d-flex align-items-center ms-1'
         >
             <div style={{ width: "700px" }}>
                 <Modal.Header className="bg-dark text-white border-0">
@@ -88,7 +87,7 @@ const AddEpisode = ({ show, handleClose }) => {
                             <Button
                                 className="text-light text-center col-4 fw-bold"
                                 style={{ backgroundColor: "red", border: "none" }}
-                                onClick={handleFileInput}
+                                onClick={handleSubmit}
                             >
                                 Add
                             </Button>

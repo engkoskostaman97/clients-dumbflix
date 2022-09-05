@@ -13,7 +13,7 @@ function Listdetail() {
     const handleClose = () => setShow(false);
     return (
         <>
-            <div className='d-flex justify-content-center bg-dark' variant="dark">
+            <div className='listd' variant="dark">
                 <video
                     id="my-player"
                     class="video-js"
@@ -30,7 +30,7 @@ function Listdetail() {
             <div style={{ backgroundColor: "black" }} >
                 <div className='d-grid gap-2 d-md-flex justify-content-md-end'>
                     <Button
-
+                        className="btn-addepisode"
                         onClick={handleShow}
                     >
                         Add Episode
