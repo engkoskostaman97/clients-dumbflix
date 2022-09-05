@@ -5,6 +5,7 @@ import image1 from '../image/dumbflix.png';
 import image2 from '../image/Ellipse 1.png';
 import image3 from '../image/Vector.png';
 import Nav from 'react-bootstrap/Nav';
+import image4 from '../image/logout1.png';
 
 
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -39,11 +40,13 @@ export default function Listtrans() {
                                     />{' '}
                                     <NavDropdown >
                                         <NavDropdown.Item href="/listfilm" className='d-flex '>
-                                            <img src={image3} />
+                                            <img src={image3} alt="image3" />
                                             <p className='text-danger  mx-2 mt-3 mb-2'>Film</p>
                                         </NavDropdown.Item>
                                         <hr></hr>
-                                        <NavDropdown.Item href="#action/3.2" > <p className='text-danger'>Logout</p>
+                                        <NavDropdown.Item href="/list" className='d-flex' >
+                                            <img src={image4} alt="image4" />
+                                            <p className='text-danger  mx-2 mt-3 mb-2'>Log out</p>
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>

@@ -22,10 +22,6 @@ function Listdetail() {
                     <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
                     <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
 
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                    </p>
                 </video>
             </div>
             <div style={{ backgroundColor: "black" }} >
@@ -46,10 +42,14 @@ function Listdetail() {
                         </Card>
                         <div class="col-md-5 text-light text-justify ">
                             <div class="card-body ">
-                                <h2 class="card-title">Money Heist</h2>
-                                <small >2017</small>
+                                <h2 class="card-title mb-2">Money Heist</h2>
+                                <div className='d-flex text-muted'>
+                                    <p >2017</p>
+                                    <p className='ms-3 txt-mtd' style={{ border: "2px solid grey", borderRadius: "3px", padding: "3px" }}> Tv Series</p>
+                                </div>
 
-                                <br></br>
+
+
 
                                 <p class='mt-2'>Money Heist is a crime drama on Netflix - originally called La Casa de Papel.
                                     Money Heist season 3 has just been released by the streaming service.

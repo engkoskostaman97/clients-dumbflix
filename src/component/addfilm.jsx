@@ -1,5 +1,6 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form';
+import { CgAttachment } from 'react-icons/cg';
 
 function Addfilm() {
     return (
@@ -9,7 +10,7 @@ function Addfilm() {
             </div>
             <form className='d-flex justify-content-center'>
                 <div className='row g-2 d-flex justify-content-center'>
-                    <div className='col-8'>
+                    <div style={{ width: "950px", marginLeft: "35px" }} >
                         <div className='form-floating'>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label></Form.Label>
@@ -19,9 +20,9 @@ function Addfilm() {
                     </div>
                     <div className='col-2'>
                         <div className='form-floating'>
-                            <Form.Group controlId="formFile" className="mb-3 ">
-                                <Form.Label></Form.Label>
-                                <Form.Control type="file" />
+                            <Form.Group controlId="formFile" className=" mb-2 mt-4 ms-2 d-flex ">
+                                <Form.Label for="fileattach" className='d-block p-2 bg-white rounded' type="file" >Attach Thumbail<CgAttachment className="text-danger mx-2" /></Form.Label>
+                                <Form.Control type="file" id="fileattach" hidden />
                             </Form.Group>
                         </div>
                     </div>

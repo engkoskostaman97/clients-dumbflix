@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
@@ -43,15 +44,17 @@ function Listfilm() {
                 <CardGroup>
                     <h2 className='text-light mb-10'> TV Series</h2>
                     <div className='d-flex mx-auto mt-5 pt-5'>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar1} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>The Witcher</Card.Title>
-                                <Card.Text>
-                                    2019
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
+                        <Link to='/listdetail' style={{ textDecoration: "none" }}>
+                            <Card style={{ backgroundColor: "black" }} className="px-2">
+                                <Card.Img variant="top" src={gambar1} />
+                                <Card.Body className='text-light'>
+                                    <Card.Title>The Witcher</Card.Title>
+                                    <Card.Text>
+                                        2019
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Link>
                         <Card style={{ backgroundColor: "black" }} className="px-2">
                             <Card.Img variant="top" src={gambar2} />
                             <Card.Body className='text-light'>
