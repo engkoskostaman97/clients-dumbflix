@@ -1,109 +1,46 @@
 import React, { Component } from "react";
-import Listtrans from "./component/listtrans";
 import { Route, Routes } from "react-router-dom";
-import List from "./component/list";
-import Listfilm from "./component/listfilm";
 import Addfilm from "./component/addfilm";
-import Listdetail from "./component/listdetail";
+import TvseriesPage from './pages/TvseriesPage'
+import MoviesPage from './pages/MoviesPage'
+import Paymen from './pages/paymen'
+import NotFound from './components/NotFound'
+import Home from './pages/Home'
+import Tvshow from "./pages/tvshow";
+import Movies from "./pages/movies";
+import Profiles from "./pages/profiles";
+import Detailfilm from "./pages/detailfilm";
+import Admin from "./component/admin";
+import Listfilms from "./component/listfilms";
+import Listdetails from "./component/listdetails";
+import './App.css';
 
-import './App.css'
+
 
 
 class App extends Component {
   render() {
     return (
-      <div>
-        {/* <div>
-          <Listtrans />
-
-        </div> */}
-        <Listtrans />
+      <>
         <Routes>
-          <Route path='/list' element={<List />} />
-          <Route path='/listfilm' element={<Listfilm />} />
+          {/* router admin */}
+          <Route path='/admin' element={<Admin />} />
+          <Route path='/listfilms' element={<Listfilms />} />
           <Route path='/addfilm' element={<Addfilm />} />
-          <Route path='/listdetail' element={<Listdetail />} />
-
-
-
+          <Route path='/listdetails' element={<Listdetails />} />
+          {/* router user */}
+          <Route path='/' element={<Home />} />
+          <Route path="/tvshow" element={<TvseriesPage />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/tvshows" element={<Tvshow />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/profiles" element={<Profiles />} />
+          <Route path="/paymen" element={<Paymen />} />
+          <Route path="/detailfilm" element={<Detailfilm />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        {/* <div>
-          <h4>Incoming Transaction</h4>
-          <Table striped>
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Users</th>
-                <th>Bukti Transfer</th>
-                <th>Remaining Active</th>
-                <th>Status Users</th>
-                <th>Status Payment</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
 
-
-            </tbody>
-          </Table>
-        </div> */}
-
-      </div>
-
+      </>
     );
 
   }

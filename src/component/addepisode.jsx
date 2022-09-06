@@ -6,6 +6,7 @@ import {
     Modal,
     Button,
 } from "react-bootstrap";
+
 import { BsPaperclip } from "react-icons/bs";
 
 
@@ -31,6 +32,9 @@ const AddEpisode = ({ show, handleClose }) => {
     };
 
     return (
+        <>
+       
+        
         <Modal
             show={show}
             onHide={handleClose}
@@ -96,6 +100,7 @@ const AddEpisode = ({ show, handleClose }) => {
                 </Modal.Body>
             </div>
         </Modal>
+        </>
     );
 };
 
