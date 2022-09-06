@@ -1,23 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import gambar1 from '../image/Rectangle6.jpg';
-import gambar2 from '../image/Rectangle1.jpg';
-import gambar3 from '../image/Rectangle2.jpg';
-import gambar4 from '../image/Rectangle3.jpg';
-import gambar5 from '../image/Rectangle4.jpg';
-import gambar6 from '../image/Rectangle5.jpg';
-import gambar7 from '../image/Rectangle66.jpg';
-import gambar8 from '../image/Rectangle7.jpg';
-import gambar9 from '../image/Rectangle8.jpg';
-import gambar10 from '../image/Rectangle9.jpg';
-import gambar11 from '../image/Rectangle10.jpg';
-import gambar12 from '../image/Rectangle11.jpg';
 import Button from 'react-bootstrap/Button';
+import dataListfilm from '../dummyData/datalistfilm.js';
+import datamovies from '../dummyData/datamovies.js';
+import { Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
-function Listfilm() {
+
+function Listfilm(props) {
+
     return (
         <div>
             <div style={{ backgroundColor: "black" }} className='d-flex'>
@@ -31,138 +23,72 @@ function Listfilm() {
                             Categori
                         </Dropdown.Toggle>
                         <Dropdown.Menu className=' bg-transparent border'>
-                            <Dropdown.Item href="/listfilms" className='text-light'>Tv Series</Dropdown.Item>
-                            <Dropdown.Item href="#/" className='text-light'>Movies</Dropdown.Item>
+                            <Dropdown.Item href="/listfilms/tv-series" className='text-light'>Tv Series</Dropdown.Item>
+                            <Dropdown.Item href="/listfilms/movies" className='text-light'>Movies</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
 
                 </div>
 
                 <div className='d-flex ms-auto p-2'>
-                    <Button className='btn btn-danger' href="./addfilm" type="submit">Add FIlm</Button>{' '}
+                    <Button as={Link} to="/addfilm" variant="danger">
+                        Add Film
+                    </Button>
                 </div>
             </div>
             <div style={{ backgroundColor: "black" }}>
-                <CardGroup>
-                    <h2 className='mx-4' id="tvseries"> TV Series</h2>
-                    <div className='d-flex mx-auto pt-2'>
-                        <Link to='/listdetails' style={{ textDecoration: "none" }}>
-                            <Card style={{ backgroundColor: "black" }} className="px-2">
-                                <Card.Img variant="top" src={gambar1} />
-                                <Card.Body className='text-light'>
 
-                                    <Card.Title>The Witcher</Card.Title>
-                                    <Card.Text>
-                                        2019
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Link>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar2} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Persona 3 The Movie</Card.Title>
-                                <Card.Text>
-                                    2016
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar3} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Game Of Thrones</Card.Title>
-                                <Card.Text>
-                                    2011
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar4} />
-                            <Card.Body className='text-light'>
-                                <Card.Title className='href = ./listdetail'>Money Heist</Card.Title>
-                                <Card.Text>
-                                    2013
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar5} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Touch</Card.Title>
-                                <Card.Text>
-                                    2020
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar6} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Arrow</Card.Title>
-                                <Card.Text>
-                                    2012
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                </CardGroup>
-                <CardGroup>
-                    <div className='d-flex mx-auto mt-5 pt-5'>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar7} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>You</Card.Title>
-                                <Card.Text>
-                                    2018
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar8} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Castlevania</Card.Title>
-                                <Card.Text>
-                                    2017
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar9} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>The OA</Card.Title>
-                                <Card.Text>
-                                    2016
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar10} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Locke & Key</Card.Title>
-                                <Card.Text>
-                                    2020
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar11} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>Reply 1988</Card.Title>
-                                <Card.Text>
-                                    2015
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card style={{ backgroundColor: "black" }} className="px-2">
-                            <Card.Img variant="top" src={gambar12} />
-                            <Card.Body className='text-light'>
-                                <Card.Title>PanjiManusiaMillenium</Card.Title>
-                                <Card.Text>
-                                    1999
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                </CardGroup>
+                <h2 className='mx-4' id="tvseries">{props.category == "tv-series" ? "TV Series" : "Movies"}</h2>
+                <Row>
+                    {props.category == "tv-series" ? dataListfilm.slice(0, 12).map((films, index) => {
+
+                        return (
+
+                            <Col sm={6} md={4} lg={3} xl={2}>
+
+                                <div className='d-flex mx-auto pt-2 ' key={index}>
+
+                                    <Card style={{ backgroundColor: "black" }} className="px-2">
+                                        <Link to="/listdetails" className="text-decoration-none" >
+                                            <Card.Img variant="top" src={films.img} style={{ width: '200px', height: '300px', objectFit: "cover" }} />
+                                            <Card.Body className='text-light'>
+                                                <Card.Title>{films.title}</Card.Title>
+                                                <Card.Text>
+                                                    {films.year}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Link>
+                                    </Card>
+
+
+                                </div>
+
+                            </Col>
+
+                        )
+                    }) : datamovies.slice(0, 12).map((films, index) => {
+                        return (
+                            <Col sm={6} md={4} lg={3} xl={2}>
+                                <div className='d-flex mx-auto pt-2 ' key={index}>
+                                    <Card style={{ backgroundColor: "black" }} className="px-2">
+                                        <Link to="/listdetails" className="text-decoration-none" >
+                                            <Card.Img variant="top" src={films.img} style={{ width: '200px', height: '300px', objectFit: "cover" }} />
+                                            <Card.Body className='text-light'>
+                                                <Card.Title>{films.title}</Card.Title>
+                                                <Card.Text>
+                                                    {films.year}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Link>
+                                    </Card>
+                                </div>
+                            </Col>
+                        )
+                    })
+                    }
+                </Row>
+
+
             </div>
         </div >
 

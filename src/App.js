@@ -25,6 +25,7 @@ class App extends Component {
         <Routes>
           {/* router admin */}
           <Route path='/admin' element={<Admin />} />
+          <Route path='/listfilms/:category' element={<Listfilms />} />
           <Route path='/listfilms' element={<Listfilms />} />
           <Route path='/addfilm' element={<Addfilm />} />
           <Route path='/listdetails' element={<Listdetails />} />
