@@ -1,14 +1,14 @@
-import React from 'react'
-import NavbarUser from '../components/NavbarUser'
-import MoviesPage from './MoviesPage'
+import React from "react";
+import NavbarUser from "../componentsUser/NavbarUser";
+import MoviesPage from "./MoviesPage";
 
 function Movies() {
-    return (
-        <div>
-            <NavbarUser />
-            <MoviesPage />
-        </div>
-    )
+  return (
+    <div>
+      <NavbarUser />
+      <MoviesPage />
+    </div>
+  );
 }
 
-export default Movies
+export default Movies;

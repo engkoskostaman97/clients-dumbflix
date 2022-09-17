@@ -1,15 +1,14 @@
-import React from 'react'
-import NavbarUser from '../components/NavbarUser'
-import TvseriesPage from './TvseriesPage'
-
+import React from "react";
+import NavbarUser from "../componentsUser/NavbarUser";
+import TvseriesPage from "./TvseriesPage";
 
 function Tvshow() {
-    return (
-        <div>
-            <NavbarUser />
-            <TvseriesPage />
-        </div>
-    )
+  return (
+    <div>
+      <NavbarUser />
+      <TvseriesPage />
+    </div>
+  );
 }
 
-export default Tvshow
+export default Tvshow;

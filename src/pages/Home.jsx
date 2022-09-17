@@ -1,14 +1,14 @@
-import React from 'react'
-import NavbarUser from '../components/NavbarUser'
-import HomePage from './HomePage'
+import React from "react";
+import NavbarUser from "../componentsUser/NavbarUser";
+import HomePage from "./HomePage";
 
 function Home() {
-    return (
-        <div>
-            <NavbarUser />
-            <HomePage />
-        </div>
-    )
+  return (
+    <div>
+      <NavbarUser />
+      <HomePage />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

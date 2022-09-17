@@ -1,14 +1,14 @@
-import React from 'react'
-import NavbarUser from '../components/NavbarUser'
-import Profile from './Profile'
+import React from "react";
+import NavbarUser from "../componentsUser/NavbarUser";
+import Profile from "./Profile";
 
 function Profiles() {
-    return (
-        <div>
-            <NavbarUser />
-            <Profile />
-        </div>
-    )
+  return (
+    <div>
+      <NavbarUser />
+      <Profile />
+    </div>
+  );
 }
 
-export default Profiles
+export default Profiles;

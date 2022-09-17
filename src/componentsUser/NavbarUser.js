@@ -70,7 +70,7 @@ function NavbarUser() {
                         className="rounded-circle"
                         src={UserBlank}
                         alt="User"
-                        style={{ width: "35px", marginTop: "30px" }}
+                        style={{ width: "35px", marginTop: "15px" }}
                       />
                     </div>
                   }

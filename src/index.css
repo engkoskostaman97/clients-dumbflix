@@ -14,11 +14,11 @@ code {
 
 .btn-addepisode {
   background-color: red !important;
-  border: 0px
+  border: 0px;
 }
 
 .listd {
-  background-color: #1F1F1F4D;
+  background-color: #1f1f1f4d;
   display: flex;
   justify-content: center;
 }
@@ -126,7 +126,7 @@ code {
   transform: rotateY(25deg);
 }
 
-.containerCard .box:hover~.box {
+.containerCard .box:hover ~ .box {
   transform: rotateY(-25deg);
 }
 
@@ -462,7 +462,16 @@ code {
 .detail-play {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  width: 50%;
+  height: 236px;
+  /* background-color: aqua; */
+}
+
+.detail-play-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 236px;
   /* background-color: aqua; */
